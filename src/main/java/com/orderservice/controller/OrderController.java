@@ -32,7 +32,7 @@ public class OrderController {
 		orderEvent.setOrder(order);
 		
 		orderProducer.sendMessage(orderEvent);
-		System.out.println("Welcome");
+		System.out.println("Successful");
 		return "Order placed successfully!";
 	}
 	
